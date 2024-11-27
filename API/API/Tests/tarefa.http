@@ -1,0 +1,26 @@
+### Listar todas as tarefas
+GET http://localhost:5000/api/tarefas/listar
+
+### Cadastrar uma nova tarefa
+POST http://localhost:5000/api/tarefas/cadastrar
+Content-Type: application/json
+
+{
+    "titulo": "Estudar Node.js",
+    "descricao": "Estudar Node.js para desenvolver aplicações web",
+    "categoriaId": "6d091456-5a2f-4b5a-98fc-f1a3b50a627d"
+}
+
+### Alterar uma tarefa
+PUT  http://localhost:5000/api/tarefas/alterar/7f648adf-dd29-4b70-8859-16d433e270cf
+Content-Type: application/json
+
+{
+    "status" : "Concluida"
+}
+
+### Buscar tarefa
+GET http://localhost:5000/api/tarefas/buscar/30cc2def-9289-4212-b069-c42f9732b7eb
+
+### Buscar não concluida
+GET http://localhost:5000/api/tarefas/naoconcluidas
